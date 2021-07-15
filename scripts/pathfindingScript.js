@@ -222,21 +222,21 @@ $("#clearBtn").click(function () {
 /* --- NAV BAR MENUS --- */
 /* --------------------- */
 
-$("#algorithms .dropdown-item").click(function () {
+$("#algorithms .btn").click(function () {
 	if (inProgress) { update("wait"); return; }
 	algorithm = $(this).text();
 	updateStartBtnText();
 	console.log("Algorithm has been changd to: " + algorithm);
 });
 
-$("#speed .dropdown-item").click(function () {
+$("#speed .btn").click(function () {
 	if (inProgress) { update("wait"); return; }
 	animationSpeed = $(this).text();
 	updateSpeedDisplay();
 	console.log("Speed has been changd to: " + animationSpeed);
 });
 
-$("#mazes .dropdown-item").click(function () {
+$("#mazes .btn").click(function () {
 	if (inProgress) { update("wait"); return; }
 	maze = $(this).text();
 	if (maze == "Random") {
